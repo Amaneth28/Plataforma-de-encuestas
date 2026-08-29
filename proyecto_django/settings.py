@@ -23,8 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-petd#f1u#f3azl9kl_$uh5%@th4o!2!ovzznf%b*w5z65h$ezj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG en False permite que Django muestre las páginas de error personalizadas.
 DEBUG = False
 
+
+# Direcciones permitidas para acceder al proyecto durante las pruebas locales.
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',

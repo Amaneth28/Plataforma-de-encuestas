@@ -19,8 +19,14 @@ from django.urls import path
 from encuestas import views
 
 urlpatterns = [
+    # Ruta para acceder al panel de administración de Django.
     path('admin/', admin.site.urls),
+    
+    # Ruta principal del sitio.
+    # Cuando se entra a http://127.0.0.1:8000/
+    # Django ejecuta la función inicio de views.py.
     path('', views.inicio, name='inicio'),
 ]
 
+# Indica a Django qué vista debe utilizar cuando ocurre un error 404.
 handler404 = 'encuestas.views.error_404'
