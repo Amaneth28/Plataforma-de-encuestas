@@ -28,5 +28,5 @@ urlpatterns = [
     path('', views.inicio, name='inicio'),
 ]
 
-# Indica a Django qué vista debe utilizar cuando ocurre un error 404.
+# Indica a Django qué vista debe utilizar cuando ocurre un error 404. esto lo fuersa ... funcionaria igual sin el
 handler404 = 'encuestas.views.error_404'
