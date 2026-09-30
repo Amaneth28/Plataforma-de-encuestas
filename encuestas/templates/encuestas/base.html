@@ -3,19 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Plataforma de Encuestas{% endblock %}</title>
 
-    <title>
-        {% block title %}
-        Plataforma de Encuestas
-        {% endblock %}
-    </title>
-
-    <!-- PROFE USE Bootstrap PARA LA PLANTILLA BONITA -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
 </head>
 
 <body class="bg-light">
@@ -23,36 +20,24 @@
     <!-- Barra superior -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-
             <a class="navbar-brand fw-bold" href="/">
                 Plataforma de Encuestas
             </a>
-
         </div>
     </nav>
 
+    <!-- Contenido de cada página -->
+    <main class="container py-4">
+        {% block content %}
 
-    <!--
-        Aquí se mostrará el contenido
-        de cada página que use base.html
-    -->
-    {% block content %}
+        {% endblock %}
+    </main>
 
-    {% endblock %}
-
-
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-
-        <p class="mb-0">
-            Plataforma de Encuestas - Backend Django
-        </p>
-
-    </footer>
-
-
-    <!-- JavaScript Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
     </script>
 
 </body>

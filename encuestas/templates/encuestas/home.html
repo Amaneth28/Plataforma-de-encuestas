@@ -1,144 +1,107 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'encuestas/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title %}
+Inicio - Plataforma de Encuestas
+{% endblock %}
 
-    <title>Plataforma de Encuestas</title>
+{% block content %}
 
-    <!-- PROFE USE Bootstrap PARA LA PLANTILLA BONITA -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-</head>
+<!-- Sección principal -->
+<section class="py-5">
 
-<body class="bg-light">
+    <div class="text-center">
 
-    <!-- Barra superior -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
+        <h1 class="display-4 fw-bold">
+            Plataforma de Encuestas
+        </h1>
 
-            <a class="navbar-brand fw-bold" href="/">
-                Plataforma de Encuestas
-            </a>
-
-        </div>
-    </nav>
-
-
-    <!-- Sección principal -->
-    <section class="py-5">
-
-        <div class="container text-center">
-
-            <h1 class="display-4 fw-bold">
-                Plataforma de Encuestas
-            </h1>
-
-            <p class="lead text-muted mt-3">
-                Crea, responde y administra encuestas de manera sencilla.
-            </p>
-
-            <button class="btn btn-primary btn-lg mt-3">
-                Ver Encuestas
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- Tarjetas -->
-    <section class="container my-5">
-
-        <div class="row g-4">
-
-            <!-- Tarjeta 1 -->
-            <div class="col-md-4">
-
-                <div class="card shadow-sm h-100">
-
-                    <div class="card-body text-center">
-
-                        <h3 class="card-title">
-                            Crear Encuestas
-                        </h3>
-
-                        <p class="card-text text-muted">
-                            Crea nuevas encuestas y agrega las preguntas
-                            que necesites.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Tarjeta 2 -->
-            <div class="col-md-4">
-
-                <div class="card shadow-sm h-100">
-
-                    <div class="card-body text-center">
-
-                        <h3 class="card-title">
-                            Responder
-                        </h3>
-
-                        <p class="card-text text-muted">
-                            Participa fácilmente respondiendo las encuestas
-                            disponibles.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Tarjeta 3 -->
-            <div class="col-md-4">
-
-                <div class="card shadow-sm h-100">
-
-                    <div class="card-body text-center">
-
-                        <h3 class="card-title">
-                            Resultados
-                        </h3>
-
-                        <p class="card-text text-muted">
-                            Consulta los resultados obtenidos en cada encuesta.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-
-        <p class="mb-0">
-            Plataforma de Encuestas - Backend Django
+        <p class="lead text-muted mt-3">
+            Crea, responde y administra encuestas de manera sencilla.
         </p>
 
-    </footer>
+        <button class="btn btn-primary btn-lg mt-3">
+            Ver Encuestas
+        </button>
+
+    </div>
+
+</section>
 
 
-    <!-- JavaScript Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
+<!-- Tarjetas -->
+<section class="my-5">
 
-</body>
+    <div class="row g-4">
 
-</html>
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body text-center">
+
+                    <h3 class="card-title">
+                        Crear Encuestas
+                    </h3>
+
+                    <p class="card-text text-muted">
+                        Crea nuevas encuestas y agrega las preguntas
+                        que necesites.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body text-center">
+
+                    <h3 class="card-title">
+                        Responder
+                    </h3>
+
+                    <p class="card-text text-muted">
+                        Participa fácilmente respondiendo las encuestas
+                        disponibles.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+
+            <div class="card shadow-sm h-100">
+
+                <div class="card-body text-center">
+
+                    <h3 class="card-title">
+                        Resultados
+                    </h3>
+
+                    <p class="card-text text-muted">
+                        Consulta los resultados obtenidos en cada encuesta.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

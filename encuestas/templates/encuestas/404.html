@@ -1,58 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'encuestas/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Error 404</title>
+{% block title %}
+Error 404
+{% endblock %}
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding-top: 100px;
-        }
+{% block content %}
 
-        h1 {
-            font-size: 80px;
-            margin: 0;
-            color: #e74c3c;
-        }
+<div class="text-center py-5">
 
-        h2 {
-            color: #333;
-        }
+    <h1 class="display-1 fw-bold text-danger">
+        404
+    </h1>
 
-        p {
-            color: #666;
-        }
+    <h2 class="mb-3">
+        Página no encontrada
+    </h2>
 
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1>404</h1>
-
-    <h2>Página no encontrada</h2>
-
-    <p>
+    <p class="text-muted">
         La página que estás buscando no existe.
     </p>
 
-    <a href="/">
+    <a href="/" class="btn btn-dark mt-3">
         Volver al inicio
     </a>
 
-</body>
+</div>
 
-</html>
+{% endblock %}
