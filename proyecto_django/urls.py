@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from encuestas import views
 
 urlpatterns = [
@@ -26,6 +26,7 @@ urlpatterns = [
     # Cuando se entra a http://127.0.0.1:8000/
     # Django ejecuta la función inicio de views.py.
     path('', views.inicio, name='inicio'),
+    path('api/', include('encuestas.urls')),
 ]
 
 # Indica a Django qué vista debe utilizar cuando ocurre un error 404. esto lo fuersa ... funcionaria igual sin el
