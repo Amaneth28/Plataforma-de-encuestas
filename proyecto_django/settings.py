@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,11 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-petd#f1u#f3azl9kl_$uh5%@th4o!2!ovzznf%b*w5z65h$ezj'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG en False permite que Django muestre las páginas de error personalizadas.
-DEBUG = False
+DEBUG = config('DEBUG', cast=bool)
 
 
 # Direcciones permitidas para acceder al proyecto durante las pruebas locales.
@@ -77,16 +78,21 @@ WSGI_APPLICATION = 'proyecto_django.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/6.1/ref/settings/#databases
+# Configuración de MySQL mediante variables de entorno
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'plataforma_encuestas',
-        'USER': 'encuestas_user',
-        'PASSWORD': 'Encuestas123',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': config('NAME'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
+        'HOST': config('HOST'),
+        'PORT': config('PORT'),
+
+        # Activar el modo estricto de MySQL
+        'OPTIONS': {
+            'init_command': "SET SESSION sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
 }
 

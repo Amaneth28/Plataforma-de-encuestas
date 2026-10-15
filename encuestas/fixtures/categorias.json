@@ -1,0 +1,80 @@
+
+[
+  {
+    "model": "encuestas.categoria",
+    "pk": 1,
+    "fields": {
+      "nombre": "Educación",
+      "descripcion": "Encuestas relacionadas con educación y aprendizaje.",
+      "activa": true,
+      "created_at": "2026-10-15T00:00:00Z",
+      "updated_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "encuestas.categoria",
+    "pk": 2,
+    "fields": {
+      "nombre": "Tecnología",
+      "descripcion": "Encuestas sobre informática, tecnología e innovación.",
+      "activa": true,
+      "created_at": "2026-10-15T00:00:00Z",
+      "updated_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "encuestas.categoria",
+    "pk": 3,
+    "fields": {
+      "nombre": "Salud",
+      "descripcion": "Encuestas relacionadas con salud y bienestar.",
+      "activa": true,
+      "created_at": "2026-10-15T00:00:00Z",
+      "updated_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "encuestas.categoria",
+    "pk": 4,
+    "fields": {
+      "nombre": "Satisfacción",
+      "descripcion": "Encuestas para evaluar servicios, productos y experiencias.",
+      "activa": true,
+      "created_at": "2026-10-15T00:00:00Z",
+      "updated_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "encuestas.categoria",
+    "pk": 5,
+    "fields": {
+      "nombre": "Medio Ambiente",
+      "descripcion": "Encuestas sobre reciclaje, contaminación y cuidado del medio ambiente.",
+      "activa": true,
+      "created_at": "2026-10-15T00:00:00Z",
+      "updated_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "encuestas.categoria",
+    "pk": 6,
+    "fields": {
+      "nombre": "Entretenimiento",
+      "descripcion": "Encuestas sobre videojuegos, películas, música y actividades recreativas.",
+      "activa": true,
+      "created_at": "2026-10-15T00:00:00Z",
+      "updated_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "model": "encuestas.categoria",
+    "pk": 7,
+    "fields": {
+      "nombre": "Otros",
+      "descripcion": "Encuestas de temas generales.",
+      "activa": true,
+      "created_at": "2026-10-15T00:00:00Z",
+      "updated_at": "2026-10-15T00:00:00Z"
+    }
+  }
+]
